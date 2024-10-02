@@ -1,4 +1,5 @@
 
+
 # Book Tracker App
 
 This is a MERN stack-based web application that allows users to track their reading progress. Users can enter books, update their reading progress, and view a progress bar to see how close they are to finishing each book.
@@ -30,47 +31,41 @@ Before you begin, ensure you have the following installed:
 ### Installation
 
 1. Clone the repository:
-    \`\`\`bash
+```
     git clone https://github.com/EvanMeyerEmich/book-tracker-app.git
-    \`\`\`
+ ```
 2. Navigate into the project directory:
-    \`\`\`bash
+```
     cd book-tracker-app
-    \`\`\`
+```
 3. Install dependencies for both frontend and backend:
-    \`\`\`bash
+```
     npm install
     cd client && npm install
-    \`\`\`
+ ```
 
 ### Running the App
 
-1. Start the MongoDB server:
-    \`\`\`bash
-    mongod
-    \`\`\`
+1. Start the backend server:
+```
+    node server.js
+```
 
-2. Start the backend server:
-    \`\`\`bash
-    npm run server
-    \`\`\`
-
-3. Start the frontend React app:
-    \`\`\`bash
+2. Start the frontend React app:
+```
     cd client && npm start
-    \`\`\`
+```
 
-4. Open the app in your browser at `http://localhost:3000`.
+3. Open the app in your browser at `http://localhost:3000`.
 
 ### Environment Variables
 
 Create a `.env` file in the root directory with the following variables:
 
-\`\`\`
+```
 MONGO_URI=<your_mongodb_uri>
 PORT=5000
-\`\`\`
-
+```
 ### Deployment
 
 The app can be deployed using AWS Amplify and Route 53 for domain management. Please follow the AWS documentation for more details on deployment.
